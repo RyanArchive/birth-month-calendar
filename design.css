@@ -1,0 +1,324 @@
+
+/* Color */
+
+:root {
+	--blue-magenta: #704E8F;
+	--earthborn-bugle: #F7F7F7;
+	--green: #2ACA44;
+	--medium-light-red: #FF5F5A;
+	--very-dark-gray: #1E1E1E;
+	--white: #FFFFFF;
+	--yellow: #FFBE2E;
+}
+
+/* General */
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--white);
+	color: #373D48;
+	overflow-x: hidden;
+}
+
+/* Header */
+
+nav {
+	background-color: var(--very-dark-gray);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+	height: 100px;
+	width: 100%;	
+	z-index: 10;
+}
+
+.header {
+	display: flex;
+	height: 100%;
+	margin: auto;
+	max-width: 1400px;
+}
+
+/* */
+
+.left-container {
+	align-items: center;
+	display: flex;
+}
+
+.left-circle {
+	border-radius: 50%;
+	height: 30px;
+	margin-right: 20px;
+	width: 30px;
+}
+
+.left-circle:nth-child(1) {
+	background-color: var(--medium-light-red);
+}
+
+.left-circle:nth-child(2) {
+	background-color: var(--yellow);
+}
+
+.left-circle:nth-child(3) {
+	background-color: var(--green);
+}
+
+/* */
+
+.navigation-container {
+	display: flex;
+	width: 100%;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: right;
+	list-style: none;
+	margin-left: 30%;
+	width: 100%;
+}
+
+.navigation-item {
+	margin-left: 70px;
+}
+
+.navigation-item a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.navigation-item-active, .navigation-item a:hover {
+	color: var(--yellow);
+}
+
+/* */
+
+footer {
+	background-color: #494949;
+	color: var(--white);
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/* Main */
+
+.main {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	margin: auto;
+	max-width: 1150px;
+	padding-bottom: 90px ;
+	padding-top: 90px;
+}
+
+/* */
+
+.main-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 45%;
+}
+
+.main-text h1 {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.main-text h2 {
+	font-size: 27px;
+	font-weight: 600;
+	margin-top: 100px;
+}
+
+/* */
+
+.main-animation {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 55%;
+}
+
+.main-animation-gif {
+	width: 75%;
+}
+
+/* Calendar */
+
+.main-calendar {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	max-width: 1400px;
+}
+
+/* */
+
+.calendar {
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 1000px;
+}
+
+/* */
+
+.calendar h1 {
+	margin-top: 50px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* */
+
+.calendar-container table {
+	margin: 50px;
+	width: calc(100% - 100px);
+}
+
+.calendar-container thead td {
+	color: var(--blue-magenta);
+	font-weight: 600;
+}
+
+.calendar-container td {
+	height: 80px;
+	text-align: center;
+	width: 150px;
+}
+
+.calendar-container tr td:nth-child(1) {
+	border-radius: 5px 0 0 5px;
+}
+
+.calendar-container tr td:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.calendar-container tbody tr:nth-child(1) td:nth-child(1),
+.calendar-container tbody tr:nth-child(1) td:nth-child(2),
+.calendar-container tbody tr:nth-child(1) td:nth-child(3),
+.calendar-container tbody tr:nth-child(1) td:nth-child(4) {
+	color: #C8C8C8;
+}
+
+.calendar-container tr:nth-child(5) td:nth-child(3) {
+	border: 3px solid var(--blue-magenta);
+	color: var(--white);
+	position: relative;
+}
+
+.calendar-container tr:nth-child(5) td:nth-child(3) div {
+	align-items: center;
+	background-color: var(--blue-magenta);
+	display: flex;
+	height: calc(100% - 10px);
+	justify-content: center;
+	margin: 5px;
+}
+
+/* */
+
+.calendar-container .fa-birthday-cake {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+/* */
+
+.details {
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	margin-left: 40px;
+	padding: 30px;
+	position: relative;
+	width: 360px;
+}
+
+/* */
+
+.title-design-color {
+	background-color: var(--blue-magenta);
+	height: 60px;
+	left: 0;
+	position: absolute;
+	top: 30px;
+	width: 35px;
+}
+
+/* */
+
+.details li {
+	list-style: none;
+	width: 300px;
+}
+
+.details li:nth-child(1) {
+	position: relative;
+}
+
+.details li:nth-child(1) div {
+	background-color: var(--blue-magenta);
+	border-radius: 0 10px 10px 0;
+	align-items: center;
+	color: var(--white);
+	display: flex;
+	font-size: 21px;
+	font-weight: 600;
+	height: 60px;
+	list-style: none;
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+.details .fa-birthday-cake {
+	color: var(--blue-magenta);
+	font-size: 36px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.details li:nth-child(2) {
+	border-bottom: 1px solid var(--very-dark-gray);
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+.details li:nth-child(3) {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.details li:nth-child(3) div {
+	background-color: var(--blue-magenta);
+	border-radius: 2px;
+	height: 30px;
+	margin-right: 10px;
+	width: 8px;
+}
